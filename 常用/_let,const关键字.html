@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>_let,const关键字</title>
+
+</head>
+
+<body>
+
+    <button>按钮一</button>
+    <button>按钮二</button>
+    <button>按钮三</button>
+
+    <script>
+        /* 
+                                                                              -let
+                                                                              1、作用
+                                                                                与var相同，用于声明一个变量
+                                                                              2、特点
+                                                                                 -在块作用域内有效
+                                                                                 -不能重复声明
+                                                                                 -不会预处理，不存在提升
+                                                                              3、应用
+                                                                                 循环加监听
+
+                                                                              -const
+                                                                              1、作用
+                                                                                声明变量为常量
+                                                                               */
+
+        var buts = document.getElementsByTagName('button')
+
+        //使用闭包
+        for (var i = 0; i < 3; i++) {
+            (function(i) {
+                buts[i].onclick = function() {
+                    console.log(i)
+                }
+            })(i)
+        }
+
+
+
+        // for (let i = 0; i < 3; i++) {
+        //     buts[i].onclick = function() {
+        //         console.log(i)
+        //     }
+        // }
+    </script>
+
+</body>
+
+</html>

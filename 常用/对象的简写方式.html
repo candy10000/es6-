@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>对象的简写</title>
+</head>
+
+<body>
+
+    <script>
+        var name = 'candy'
+        var age = 22
+        var person = {
+            name,
+            age, //属性相同的可以简写为一个单词
+            getName() {
+                console.log(this.name)
+            } //方法可以简写成去掉function
+        }
+
+        person.getName()
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+{
+    "name": "learning-funcional",
+    "version": "1.0.0",
+    "description": "函数式编程练习",
+    "main": "index.js",
+    "scripts": {
+        "play": "babel-node functional-playground/play.js --presets es2015-node5"
+
+    },
+    "author": "candy",
+    "license": "ISC",
+    "devDependencies": {
+        "babel-preset-es2015-node5": "^1.2.0"
+    }
+}
